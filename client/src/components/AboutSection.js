@@ -3,6 +3,9 @@ import '../styles/about-section.css'
 
 const AboutSection = () => (
     <div className="about-section">
+        <div className="about__header">Software Developer</div>
+        <p>I turn ideas into full-stack web applications. Learning is my passion.</p>
+        <div className="about__button">Get in touch</div>
     </div>
 );
 

@@ -1,0 +1,19 @@
+.projects-section {
+    padding: 0 16rem;
+}
+
+.projects-section__header {
+    color: #342e2d;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.divider {
+    width: 60rem;
+    height: 2px;
+    background: #004cff70;
+    margin-top: 2rem;
+}
