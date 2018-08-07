@@ -36,7 +36,7 @@
 
 .project-container:hover .project-overlay {
     opacity: 100;
-    transform: translate(0, -75%);
+    transform: translate(0, -100%);
 }
 
 .project-img {
@@ -52,7 +52,7 @@
     position: absolute;
     left: 0;
     background: white;
-    height: 15rem;
+    height: 10rem;
     padding: 2rem;
     width: 860px;
     border-radius: 0 0 5px 5px;
@@ -61,6 +61,11 @@
     transition: opacity 300ms ease-in-out;
     transition: transform 300ms ease-in-out;
     box-shadow: 0 4px 20px #2c3e5054;
-    font-size: 2rem;
+    font-size: 3rem;
     pointer-events: none;
+}
+
+.project-overlay > p {
+    font-size: 2rem;
+    color: #2c3e5054
 }
