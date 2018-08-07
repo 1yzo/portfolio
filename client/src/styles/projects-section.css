@@ -1,10 +1,15 @@
 .projects-section {
     padding: 0 16rem;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects-section__header {
-    color: #342e2d;
-    font-size: 3rem;
+    color: #2c3e50;
+    font-size: 4rem;
+    font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,4 +21,46 @@
     height: 2px;
     background: #004cff70;
     margin-top: 2rem;
+}
+
+.project-container {
+    position: relative;
+    height: 500px;
+    width: 900px;
+    margin-top: 6rem;
+    box-shadow: 0 4px 20px #2c3e5054;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-container:hover .project-overlay {
+    opacity: 100;
+    transform: translate(0, -75%);
+}
+
+.project-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 900px;
+    border-radius: 5px;
+}
+
+.project-overlay {
+    position: absolute;
+    left: 0;
+    background: white;
+    height: 15rem;
+    padding: 2rem;
+    width: 860px;
+    border-radius: 0 0 5px 5px;
+    opacity: 0;
+    bottom: -15rem;
+    transition: opacity 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    box-shadow: 0 4px 20px #2c3e5054;
+    font-size: 2rem;
+    pointer-events: none;
 }

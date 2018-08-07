@@ -12,6 +12,13 @@
     height: 100px;
 }
 
+.skill-container > div {
+    /* color: #2c3e50; */
+    color: #2c3e50bd;
+    text-align: center;
+    margin-top: 2rem;
+}
+
 @keyframes float {
     0% {
         margin-top: 6rem;

@@ -4,6 +4,9 @@
     align-items: center;
     width: 100%;
     padding: 2rem 0;
+    z-index: 2;
+    transition: background 300ms ease-in-out;
+    background: transparent;
 }
 
 .header__padding {
@@ -12,9 +15,11 @@
 
 .logo {
     font-size: 4rem;
+    user-select: none;
 }
 
 .header__logo {
+    user-select: none;
     color: white;
     font-size: 3rem;
     margin-right: 10rem;
@@ -41,4 +46,20 @@
     position: absolute;
     right: 40px;
     box-shadow: 0 1px 10px #0000004d;
+}
+
+.header--scrolled {
+    background: white;
+    box-shadow: 0 4px 20px #2c3e5054;    
+    opacity: 100;
+}
+
+.header--scrolled > .header__logo {
+    color: #004cffb9;
+    text-shadow: none;
+}
+
+.header--scrolled > .header__link {
+    color: #342e2d;
+    text-shadow: none;
 }
