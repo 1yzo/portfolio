@@ -28,6 +28,7 @@ a {
 }
 
 .project-container {
+    z-index: 2;
     text-decoration: none;
     position: relative;
     height: 500px;

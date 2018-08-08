@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     padding: 2rem 0;
-    z-index: 2;
+    z-index: 3;
     transition: background 300ms ease-in-out;
     background: transparent;
 }

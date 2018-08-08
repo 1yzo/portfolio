@@ -1,0 +1,6 @@
+.contact-section {
+    height: 1000px;
+    background: linear-gradient(to bottom right, #3370ff, #004cff);
+    margin-top: -35rem;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+}
