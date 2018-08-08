@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .projects-section {
     padding: 0 16rem;
     margin-top: 8rem;
@@ -24,14 +28,18 @@
 }
 
 .project-container {
+    text-decoration: none;
     position: relative;
     height: 500px;
     width: 900px;
     margin-top: 6rem;
+    margin-bottom: 3rem;
     box-shadow: 0 4px 20px #2c3e5054;
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
+    color: #2c3e50;
+    transition: box-shadow 300ms ease-in-out;
 }
 
 .project-container:hover .project-overlay {
@@ -62,10 +70,15 @@
     transition: transform 300ms ease-in-out;
     box-shadow: 0 4px 20px #2c3e5054;
     font-size: 3rem;
-    pointer-events: none;
+    cursor: default;
 }
 
 .project-overlay > p {
     font-size: 2rem;
     color: #2c3e5054
+}
+
+.project-overlay  i {
+    color: #2c3e50;
+    cursor: pointer;
 }
