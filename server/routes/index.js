@@ -1,7 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
-const secrets = process.env.NODE_ENV === 'production' ? '' : require('../secrets');
+let secrets = '';
+if (process.env.NODE_ENV !== 'production') {
+    secrets = require('../secrets');
+}
+// const secrets = process.env.NODE_ENV === 'production' ? '' : require('../secrets');
 
 const transporter = nodemailer.createTransport({
     service: 'Gmail',
