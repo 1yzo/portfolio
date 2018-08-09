@@ -1,6 +1,60 @@
 .contact-section {
-    height: 1000px;
-    background: linear-gradient(to bottom right, #3370ff, #004cff);
-    margin-top: -35rem;
+    background: linear-gradient(to bottom right, #3370ff, #004cfffb);
+    margin-top: -40rem;
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    padding: 0 16rem 3rem 16rem;
+}
+
+.contact-section__content {
+    padding-top: 50rem;
+}
+
+.contact-form {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 10px #0000004d;
+    background: white;    
+    padding: 5rem;
+    /* justify-content: space-between;
+    min-height: 60rem; */
+}
+
+.contact-form > input, textarea {
+    border: none;
+    /* box-shadow: inset 0 1px 5px #1237df4d; */
+    border-bottom: 3px solid #eee;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+    word-break: break-all;
+}
+
+#name {
+    border-bottom: 3px solid #5490f8;
+}
+
+.contact-form > input {
+    font-size: 3rem;
+}
+
+#details {
+    min-height: 10rem;
+    font-size: 2rem;
+    resize: none;
+}
+
+label {
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+.contact-form > button {
+    border: none;
+    font-size: 2rem;
+    color: white;
+    /* background: linear-gradient(to bottom right, #98b7ff, #004cff); */
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #557dffbe 0%, #3370ff 100%);
 }
