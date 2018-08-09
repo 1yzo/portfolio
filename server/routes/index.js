@@ -11,21 +11,21 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-router.post('/contact', (res, req) => {
+router.post('/contact', (req, res) => {
     const { name, email, message, budget } = req.body;
-    
+
     transporter.sendMail({
         from: email,
         to: 'iyzo.saab@gmail.com',
         subject: `Project proposal from ${name}`,
-        text: message + '\n - from ' + email + '\n Budget: ' + budget
+        text: message + '\n\nFrom: ' + email + '\nBudget: ' + budget
     }, (error, info) => {
         if (error) {
             console.log(error);
         } else {
             res.json(info.message);
         }
-    });
+    }); 
 });
 
 module.exports = router;

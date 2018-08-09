@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import '../styles/header.css';
 
 class Header extends React.Component {
