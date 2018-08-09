@@ -23,7 +23,7 @@ class Header extends React.Component {
                 <div className="header__padding" />
                 <div className="header__logo"><i className="material-icons logo">power_settings_new</i>sman</div>
                 <Link className="header__link" to="about-section" spy smooth duration={700}>About</Link>
-                <Link className="header__link" to="projects-section" spy smooth duration={700}>Projects</Link>
+                <Link className="header__link" to="projects-section" spy smooth duration={700} offset={-110}>Projects</Link>
             <Link className="header__link" to="contact-form" spy smooth duration={700}>Contact</Link>
                 <div className="header__button"><i className="fas fa-envelope"></i></div>
                 <div className="header__padding" />
