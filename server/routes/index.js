@@ -17,7 +17,7 @@ router.post('/contact', (req, res) => {
     const { name, email, message, budget } = req.body;
 
     transporter.sendMail({
-        from: email,
+        from: 'cacti97@hotmail.com',
         to: 'iyzo.saab@gmail.com',
         subject: `Project proposal from ${name}`,
         text: message + '\n\nFrom: ' + email + '\nBudget: ' + budget
