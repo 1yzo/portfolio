@@ -1,18 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
+const mg = require('nodemailer-mailgun-transport');
 const secrets = process.env.NODE_ENV === 'production' ? '' : require('../secrets');
 
-// const transporter = nodemailer.createTransport({
-//     service: 'Gmail',
-//     auth: {
-//         user: 'iyzo.saab@gmail.com',
-//         pass: secrets.emailPass || process.env.EMAIL_PASS
-//     }
-// });
 
 const transporter = nodemailer.createTransport({
-    sendmail: true
+    service: 'hotmail',
+    auth: {
+        user: 'cacti97@hotmail.com',
+        pass: secrets.emailPass || process.env.EMAIL_PASS
+    }
 });
 
 router.post('/contact', (req, res) => {
