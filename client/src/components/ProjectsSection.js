@@ -23,7 +23,7 @@ class ProjectsSection extends React.Component {
                             <div>kuficlothing.com</div>
                             <i className="fab fa-github" link="https://github.com/1yzo/kuficlothing" onClick={this.openLink}></i>
                         </div>
-                        <p>Responsive e-commerce web application.</p>
+                        <p>Responsive e-commerce web application with admin portal to view analytics and edit/add products.</p>
                     </div>
                 </a>
                 <a className="project-container" href="https://valuelife.herokuapp.com" target="_blank" rel="noopener noreferrer">
@@ -33,7 +33,7 @@ class ProjectsSection extends React.Component {
                             <div>valuelife.org</div>
                             <i className="fab fa-github" link="https://github.com/1yzo/value-life-foundation-donate" onClick={this.openLink} />
                         </div>
-                        <p>Responsive charity website.</p>
+                        <p>Responsive web application for non-profit organization Value Life Foundation.</p>
                     </div>
                 </a>
             </div>
