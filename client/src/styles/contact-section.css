@@ -58,3 +58,9 @@ label {
     /* border-bottom: 3px solid red; */
     color: red;
 }
+
+.loading-button {
+    min-height: 43px;
+    max-height: 43px;
+    text-align: center;
+}

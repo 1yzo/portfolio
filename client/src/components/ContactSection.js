@@ -7,7 +7,8 @@ class ContactSection extends React.Component {
         email: '',
         budget: '',
         details: '',
-        error: ''
+        error: '',
+        success: false
     };
     
     handleChange = (e) => {
@@ -43,15 +44,27 @@ class ContactSection extends React.Component {
                     budget: this.state.budget
                 }),
                 headers: { 'content-type': 'application/json' }
-            });
+            }).then(() => this.setState(() => ({ 
+                success: true,
+                name: '',
+                email: '',
+                budget: '',
+                details: ''
+            })));
         }
     };
+
+    resetSuccessStatus = () => {
+        if (!this.success) {
+            this.setState(() => ({ success: false }));
+        }
+    }
     
     render() {
         return (
             <div className="contact-section">
                 <div className="contact-section__content">
-                    <form className="contact-form" onSubmit={this.handleSubmit}>
+                    <form className="contact-form" onSubmit={this.handleSubmit} onClick={this.resetSuccessStatus}>
                         <label
                             className={"contact-form__input" + (this.state.error.includes('name') ? ' contact-form__input--error' : '')}
                         >
@@ -96,7 +109,10 @@ class ContactSection extends React.Component {
                             value={this.state.details}
                             onChange={this.handleChange}
                         />
-                        <button>Send</button>
+                        <button className="loading-button">
+                            {!this.state.success && 'Send'}
+                            {this.state.success && 'Message sent 😄'}
+                        </button>
                     </form>
                 </div>
             </div>

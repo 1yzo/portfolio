@@ -15,7 +15,7 @@ router.post('/contact', (req, res) => {
         subject: `Project proposal from ${name}`,
         text: message + '\n\nFrom: ' + email + '\nBudget: ' + budget
     };
-    sgMail.send(msg);
+    sgMail.send(msg).then(() => res.json('Email successfully delivered'));
 });
 
 module.exports = router;
