@@ -31,4 +31,9 @@
     margin-top: 3rem;
     box-shadow: 0 1px 10px #0000004d;
     cursor: pointer;
+    transition: box-shadow 300ms ease-out;
+}
+
+.about__button:hover {
+    box-shadow: 0 1px 20px #00000091;
 }
