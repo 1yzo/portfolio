@@ -44,7 +44,6 @@ a {
 }
 
 .project-container:hover .project-overlay {
-    opacity: 100;
     transform: translate(0, -100%);
 }
 
@@ -68,7 +67,6 @@ a {
     bottom: -15rem;
     transition: opacity 300ms ease-in-out;
     transition: transform 300ms ease-in-out;
-    transform: translate(0, 0);
     box-shadow: 0 4px 20px #2c3e5054;
     font-size: 3rem;
     cursor: default;
