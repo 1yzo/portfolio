@@ -23,7 +23,7 @@ class ProjectsSection extends React.Component {
                             <div>kuficlothing.com</div>
                             <i className="fab fa-github" link="https://github.com/1yzo/kuficlothing" onClick={this.openLink}></i>
                         </div>
-                        <p>Responsive e-commerce web application with admin portal to view analytics and edit/add products.</p>
+                        <p>Responsive e-commerce web application with admin portal to view analytics, edit/add products, and view orders.</p>
                     </div>
                 </a>
                 <a className="project-container" href="https://valuelife.herokuapp.com" target="_blank" rel="noopener noreferrer">
@@ -34,6 +34,16 @@ class ProjectsSection extends React.Component {
                             <i className="fab fa-github" link="https://github.com/1yzo/value-life-foundation-donate" onClick={this.openLink} />
                         </div>
                         <p>Responsive web application for non-profit organization Value Life Foundation.</p>
+                    </div>
+                </a>
+                <a className="project-container" href="https://note-page.herokuapp.com" target="_blank" rel="noopener noreferrer">
+                    <img className="project-img" src="/images/notepage.png" alt="NotePage"/>
+                    <div className="project-overlay" onClick={this.openLink}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                            <div>notepage.com</div>
+                            <i className="fab fa-github" link="https://github.com/1yzo/note-page" onClick={this.openLink} />
+                        </div>
+                        <p>Social note-taking application.</p>
                     </div>
                 </a>
             </div>
