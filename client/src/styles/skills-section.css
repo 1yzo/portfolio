@@ -2,9 +2,13 @@
     padding: 0 16rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 6rem;
-    /* animation: float 5s ease-in-out infinite; */
     margin-bottom: 6rem;
+}
+
+.skill-container {
+    /* margin: 1rem; */
 }
 
 .skill-icon {
@@ -29,4 +33,19 @@
     100% {
         margin-top: 6rem;
     }
+}
+
+@media (max-width: 850px) {
+    .skills-section {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .skills-section {
+        justify-content: center;
+    }
+    .skill-container {
+        margin: 2rem;
+    }  
 }

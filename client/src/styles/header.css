@@ -77,3 +77,17 @@
 .header--scrolled > .header__link--active {
     color: #342e2d;
 }
+
+@media (max-width: 850px) {
+    .header__padding {
+        flex-basis: 2rem;
+    }
+    .header__link {
+        display: none;
+    }
+    .header__button {
+        right: 20px;
+    }
+}
+
+
