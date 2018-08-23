@@ -109,4 +109,8 @@ a {
         height: 25px;
         transform: translate(0, -20rem);
     }
+    .project-container {
+        margin-bottom: 1rem;
+        margin-top: 2.5rem;
+    }
 }
