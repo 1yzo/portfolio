@@ -1,5 +1,5 @@
 .contact-section {
-    background: linear-gradient(to bottom right, #3370ff, #004cfffb);
+    background: linear-gradient(to bottom right, #3370ff, #004cff);
     margin-top: -40rem;
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
     padding: 0 16rem 3rem 16rem;
@@ -13,7 +13,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 1px 10px #0000004d;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.301);
     background: white;    
     padding: 5rem;
 }
@@ -51,7 +51,7 @@ label {
     padding: 1rem;
     border-radius: 5px;
     background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #557dffbe 0%, #3370ff 100%);
+    background-image: linear-gradient(135deg, rgba(85,125,255,0.745) 0%, #3370ff 100%);
 }
 
 .contact-form__input--error {

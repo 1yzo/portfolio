@@ -23,7 +23,7 @@ a {
 .divider {
     width: 60rem;
     height: 2px;
-    background: #004cff70;
+    background: rgba(0,76,255,0.439);
     margin-top: 2rem;
 }
 
@@ -35,7 +35,7 @@ a {
     width: 900px;
     margin-top: 6rem;
     margin-bottom: 3rem;
-    box-shadow: 0 4px 20px #2c3e5054;
+    box-shadow: 0 4px 20px rgba(44,62,80,0.329);
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
@@ -67,14 +67,14 @@ a {
     bottom: -20rem;
     transition: opacity 300ms ease-in-out;
     transition: transform 300ms ease-in-out;
-    box-shadow: 0 4px 20px #2c3e5054;
+    box-shadow: 0 4px 20px rgba(44,62,80,0.329);
     font-size: 3rem;
     cursor: default;
 }
 
 .project-overlay > p {
     font-size: 2rem;
-    color: #2c3e5054
+    color: rgba(44,62,80,0.329)
 }
 
 .project-overlay  i {
