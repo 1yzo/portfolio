@@ -26,7 +26,7 @@ class ProjectsSection extends React.Component {
                         <p>Responsive e-commerce web application with admin portal to view analytics, edit/add products, and view orders.</p>
                     </div>
                 </a>
-                <a className="project-container" href="https://valuelife.herokuapp.com" target="_blank" rel="noopener noreferrer">
+                <a className="project-container" href="https://valuelife.org" target="_blank" rel="noopener noreferrer">
                     <img className="project-img" src="/images/vlf.jpg" alt="VLF"/>
                     <div className="project-overlay" onClick={this.openLink}>
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
