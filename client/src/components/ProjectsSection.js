@@ -1,51 +1,40 @@
 import React from 'react';
+import ProjectCard from './ProjectCard';
 import '../styles/projects-section.css';
 
-class ProjectsSection extends React.Component {
-    openLink = (e) => {
-        e.stopPropagation();
-        e.preventDefault();
-        
-        if (e.target.attributes.link) {
-            const link = e.target.attributes.link.value;
-            window.open(link, '_blank');
-        }
-    }
-    
+class ProjectsSection extends React.Component {    
     render() {
         return (
             <div className="projects-section">
                 <div className="projects-section__header">Featured Work</div>
-                <a className="project-container" href="https://kuficlothing.herokuapp.com" target="_blank" rel="noopener noreferrer">
-                    <img className="project-img" src="/images/kuficlothing.jpg" alt="Kufi Clothing" />
-                    <div className="project-overlay" onClick={this.openLink}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <div>kuficlothing.com</div>
-                            <i className="fab fa-github" link="https://github.com/1yzo/kuficlothing" onClick={this.openLink}></i>
-                        </div>
-                        <p>Responsive e-commerce web application with admin portal to view analytics, edit/add products, and view orders.</p>
-                    </div>
-                </a>
-                <a className="project-container" href="https://valuelife.org" target="_blank" rel="noopener noreferrer">
-                    <img className="project-img" src="/images/vlf.jpg" alt="VLF"/>
-                    <div className="project-overlay" onClick={this.openLink}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <div>valuelife.org</div>
-                            <i className="fab fa-github" link="https://github.com/1yzo/value-life-foundation-donate" onClick={this.openLink} />
-                        </div>
-                        <p>Responsive web application for non-profit organization Value Life Foundation.</p>
-                    </div>
-                </a>
-                <a className="project-container" href="https://note-page.herokuapp.com" target="_blank" rel="noopener noreferrer">
-                    <img className="project-img" src="/images/notepage.png" alt="NotePage"/>
-                    <div className="project-overlay" onClick={this.openLink}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <div>notepage.com</div>
-                            <i className="fab fa-github" link="https://github.com/1yzo/note-page" onClick={this.openLink} />
-                        </div>
-                        <p>Social note-taking application.</p>
-                    </div>
-                </a>
+                <ProjectCard
+                    name="kuficlothing.com"
+                    url="https://kuficlothing.herokuapp.com"
+                    image="/images/kuficlothing.jpg"
+                    githubUrl="https://github.com/1yzo/kuficlothing"
+                    description="Responsive e-commerce web application with admin portal to view analytics, edit/add products, and view orders."
+                />
+                <ProjectCard
+                    name="valuelife.org"
+                    url="https://valuelife.org"
+                    image="/images/vlf.jpg"
+                    githubUrl="https://github.com/1yzo/value-life-foundation-donate"
+                    description="Responsive web application for non-profit organization Value Life Foundation."
+                />
+                <ProjectCard 
+                    name="dostuff.com"
+                    url="http://do-stuff.s3-website-us-west-1.amazonaws.com"
+                    image="/images/do-stuff.png"
+                    githubUrl="https://github.com/1yzo/todo"
+                    description="Realtime collaborative task keeping."
+                />
+                <ProjectCard 
+                    name="notepage.com"
+                    url="https://note-page.herokuapp.com"
+                    image="/images/notepage.png"
+                    githubUrl="https://github.com/1yzo/note-page"
+                    description="Social note-taking application."
+                />
             </div>
         );
     }
