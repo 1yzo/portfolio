@@ -7,11 +7,6 @@ class ProjectsSection extends React.Component {
         return (
             <div className="projects-section">
                 <div className="projects-section__header">Featured Work</div>
-								<ProjectCard
-									name="Brooks & Bridges Party Rentals"
-									image="/images/bnb.png"
-									description="Responsive e-commerce platform for party rentals built with TypeScript/React and Node."
-								/>
                 <ProjectCard
                     name="kuficlothing.com"
                     url="https://kuficlothing.herokuapp.com"
@@ -19,6 +14,11 @@ class ProjectsSection extends React.Component {
                     githubUrl="https://github.com/1yzo/kuficlothing"
                     description="Responsive e-commerce web application with admin portal to view analytics, edit/add products, and view orders."
                 />
+								<ProjectCard
+									name="Brooks & Bridges Party Rentals"
+									image="/images/bnb.png"
+									description="Responsive e-commerce platform for party rentals built with TypeScript/React and Node."
+								/>
                 <ProjectCard
                     name="valuelife.org"
                     url="https://valuelife.org"
